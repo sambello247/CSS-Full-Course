@@ -1,0 +1,35 @@
+/* body {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+
+    background: papayawhip;
+    color: darkblue;
+} */
+
+
+/* RGB (Red, Green, Blue) or RGBA (Red, Green, Blue, Alpha) Example*/
+body {
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+
+    background: papayawhip;
+
+    /* Red, Green, Blue*/
+    color: rgb(255, 0, 0);
+}
+
+/* HEXADECIMAL Example */
+p {
+    /*0-9, A-F */ 
+    /* color: #FF0000; Red */
+    /* color: #00FF00; Green */
+    color: #0000ff; /*Blue*/
+}
+
+
+/* HSL (Heu Saturation Lightness) or HSLA (Heu Saturation Lightness Alpha) Example */
+p {
+    color: hsl(0, 0%, 20%)
+}

@@ -1,0 +1,62 @@
+/*CSS Reset*/
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+/* Use `px` for defining fixed sizes, especially for elements that need to maintain a specific size regardless of the screen size or layout. */
+
+.box-px {
+    width: 200px;
+    height: 150px;
+    font-size: 18px;
+    border: 1px solid #000;
+    margin-bottom: 60px;
+}
+
+/*Use `em` for defining sizes that are relative to the font size of the element itself. Useful for creating scalable typography and consistent spacing within components.*/
+
+.parent-em {
+    font-size: 16px;
+}
+
+.child-em {
+    font-size: 1.2em; /* 1.2 times the parent's font size */
+}
+
+/* Use `rem` for creating consistent spacing and layout across the entire page. It's not affected by nesting like `em`. */
+
+html {
+    font-size: 16px; /* Set a baseline font size for the page */
+}
+
+.box-rem {
+    font-size: 1.5rem; /* 1.5 times the root font size (16px * 1.5) */
+    margin: 2rem; /* Margin will be 32px (16px * 2) */
+}
+
+/* Use percentages for fluid layouts where elements should adapt to the size of their parent container. Useful for creating responsive grids and flexible designs.*/
+.parent-percent {
+    width: 300px;
+}
+
+.child-percent {
+    width: 50%; /* 50% of the parent's width (150px) */
+}
+
+
+/*Use viewport units for creating responsive elements that adjust to the dimensions of the viewport. Helpful for creating full-screen sections, headers, and footers.*/
+
+.box-viewport {
+    width: 50vw; /* 50% of the viewport width */
+    height: 60vh; /* 60% of the viewport height */
+}
+
+
+
+
+
+
+
+

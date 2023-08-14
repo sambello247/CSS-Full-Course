@@ -1,0 +1,9 @@
+
+/* Cascading Stylesheets in order words it' means CSS Works like a waterfall, it works from top to bottom.*/
+
+p{
+    
+    font-size: 64px;  
+    color: purple;
+    /* Declaration (property  & value)*/
+}

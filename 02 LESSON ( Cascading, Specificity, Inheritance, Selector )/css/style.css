@@ -1,0 +1,99 @@
+/* Cascading, Specificity, Inheritance, Selector */
+
+
+/* 
+    Cascading
+    ------------------------------------------------------------
+    
+    Cascading Stylesheets in order words it' means CSS Works like a waterfall, it works from top to bottom.
+  
+*/
+
+
+
+/* 
+    Specificity
+    --------------------------------------------------------
+    Specificity is a concept that determines which CSS rules are applied to an HTML element when there are conflicting or overlapping styles. It helps browsers decide which styles to apply when multiple rules target the same element with different declarations.   
+
+
+    Arrange from least to most specific.
+    --------------------------------------------
+    Type or element selectors (e.g., div, p)
+    Class selectors (e.g., .classname)
+    Attribute selectors (e.g., [data-attribute])
+    Pseudo-classes (e.g., :hover, :nth-child())
+    ID selectors (e.g., #id)
+    Inline styles (e.g., style="...")
+
+
+    You can as well use specificity calculator.
+    https://specificity.keegan.st/
+
+
+*/
+
+/* Selector */
+/* Universal Selector */
+    * {
+        font-family: monospace;
+    }
+
+    /*Element Selectors */
+    body {
+        font-size: 22px;
+    }
+
+
+
+    /* Group Selectors */
+    h1, h2 {
+        color: blue;
+    }
+
+
+    p {
+    color: purple;
+    }
+
+    /* Descendant selector */
+    p span {
+        text-transform: uppercase;
+        background-color: gold;
+    }
+
+    /*Classes can be use more than once*/
+    .gray {
+        color: gray;
+    }
+
+
+
+/*Id are used for Unique selection they should only exist once in your HTML documents, it's not good practice to really use ID's in your CSS*/
+    #second {
+        font-style: italic;
+    }
+
+
+/* 
+    CSS inheritance
+    ------------------------------------------------------------
+    CSS inheritance refers to the process by which certain properties of a parent element are automatically inherited by its child elements.
+
+    Here are some key points about CSS inheritance:
+    ------------------------------------------------------------
+
+    Inherited Properties: Properties like font-family, font-size, color, line-height, and text-align are typically inherited. This means that if you set these properties on a parent element, its child elements will inherit those styles.
+
+    Non-Inherited Properties: Properties like border, margin, padding, and background are not inherited. If you set these properties on a parent element, they won't be automatically applied to its child elements.
+
+    inherit Value: Some properties have the inherit value, which explicitly tells an element to inherit the value of a particular property from its parent.
+
+*/
+
+    button, input, textarea, select {
+        font: inherit;
+    }
+
+
+
